@@ -1,0 +1,7 @@
+Flask==3.0.2
+numpy==1.23.5
+opencv-python==4.7.0.72
+tensorflow==2.13.1
+tensorflow-hub==0.13.0
+setuptools>=58.0.4
+

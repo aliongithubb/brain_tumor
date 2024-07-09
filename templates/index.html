@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor Classifier</title>
+    <style>
+        body {
+            text-align: center; /* Center align text */
+            margin: 0;
+            padding: 0;
+            background-image: url('static/background1.jpg'); /* Ensure this is the correct path */
+            background-size: cover; /* Cover the entire page */
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white; /* Set text color to white */
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 2.5em; /* Increase size of the title */
+        }
+        .author {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            font-size: 1.5em; /* Adjust the size of the author text */
+            background-color: rgba(255, 255, 255, 1); /* White box with full opacity */
+            padding: 10px; /* Add padding */
+            border-radius: 10px; /* Add rounded corners */
+        }
+        .author img {
+            width: 200px; /* Increased width */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0 10px;
+        }
+        .author span {
+            color: black; /* Set text color to black */
+        }
+        .author img:last-child {
+            width: 220px; /* Increase size of the last image slightly */
+            height: auto; /* Maintain aspect ratio */
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="file"] {
+            margin: 10px 0;
+            font-size: 1em; /* Increase size of the file input text */
+        }
+        button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em; /* Increase size of the button text */
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Brain Tumor Classifier</h1>
+    <div class="author">
+        <img src="static/air-logo.png" alt="AIR Logo" style="width: 200px; height: auto;"> <!-- Adjusted size -->
+        <span>By Glodie Mpia Engo (20196013)</span>
+        <img src="static/rcaiot-logo.png" alt="RCAIOT Logo" style="width: 220px; height: auto;"> <!-- Adjusted size -->
+    </div>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".jpg, .jpeg, .png">
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>

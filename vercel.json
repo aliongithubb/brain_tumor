@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "my-flask-app/api/app.py",
+            "use": "@vercel/python",
+            "config": { "maxLambdaSize": "15mb", "runtime": "python3.8" }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "my-flask-app/api/app.py"
+        }
+    ]
+}
